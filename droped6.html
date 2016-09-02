@@ -23,6 +23,16 @@
 		</div>
 	</template>
 
+	<iron-ajax auto url={{json_url}} last-response="{{list}}"></iron-ajax>
+	<paper-dropdown-menu label="{{title}}" no-animations>
+
+		<paper-listbox class="dropdown-content" aria-readonly="true">
+			<template is="dom-repeat" items="{{list}}" as="v">
+				<paper-item style="width: 100px" aria-readonly="true">{{v.name}}</paper-item>
+			</template>
+		</paper-listbox>
+	</paper-dropdown-menu>
+
 </dom-module>
 
 <script>

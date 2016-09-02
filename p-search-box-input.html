@@ -1,13 +1,22 @@
 <dom-module id="p-search-box-input">
 	<link rel="import" href="/bower_components/paper-input/paper-input.html">
 	<link rel="import" href="/bower_components/paper-icon-button/paper-icon-button-light.html">
+	<link rel="import" href="/bower_components/iron-icon/iron-icon.html">
 
 		<template>
-			<paper-input label="Find">
-				<div prefix>$</div>
-				<div suffix>
-				<paper-icon-button>%</paper-icon-button>
-				</div>
+
+			<paper-input label="search!" type="search" placeholder="search for cats" autosave="test" results="5">
+			<div suffix id="suffixDiv">
+				<paper-button-icon>
+					<iron-icon suffix icon="arrow-drop-up" ></iron-icon>
+				</paper-button-icon>
+				<br>
+
+				<paper-button-icon>
+					<iron-icon suffix icon="arrow-drop-down"></iron-icon>
+				</paper-button-icon>
+
+			</div>
 			</paper-input>
 		</template>
 
@@ -19,3 +28,12 @@
 		is: "p-search-box-input"
 	});
 </script>
+
+
+
+<!--label="Find">&ndash;&gt;-->
+<!--<div prefix>$</div>-->
+<!--<div suffix>-->
+<!--<paper-icon-button>%</paper-icon-button>-->
+<!--</div>-->
+<!--</paper-input>-
