@@ -1,0 +1,14 @@
+{
+  "name": "country-flags",
+  "homepage": "https://github.com/hjnilsson/country-flags",
+  "_release": "7cd69e6fcd",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "7cd69e6fcd87d58adb379575edbf174f8b9e6ce6"
+  },
+  "_source": "git://github.com/hjnilsson/country-flags.git",
+  "_target": "*",
+  "_originalSource": "hjnilsson/country-flags",
+  "_direct": true
+}

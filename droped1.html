@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+
+<head>
+</head>
+
+<body class="vertical layout" style="background-color : #dddddd">
+
+
+
+<link rel="import" href="/bower_components/polymer/polymer.html">
+<link rel="import" href="/bower_components/paper-drawer-panel/paper-drawer-panel.html">
+<link rel="import" href="/bower_components/paper-header-panel/paper-header-panel.html">
+<link rel="import" href="/bower_components/paper-toolbar/paper-toolbar.html">
+<link rel="import" href="/bower_components/paper-menu/paper-menu.html">
+<link rel="import" href="/bower_components/paper-item/paper-item.html">
+<link rel="import" href="/bower_components/paper-material/paper-material.html">
+<link rel="import" href="/bower_components/paper-button/paper-button.html">
+<link rel="import" href="/bower_components/iron-icon/iron-icon.html">
+<link rel="import" href="/bower_components/iron-icons/iron-icons.html">
+<link rel="import" href="/bower_components/google-youtube/google-youtube.html">
+
+
+<paper-drawer-panel>
+
+    <paper-header-panel drawer>
+        <paper-toolbar>
+            <div>Polymer toolbar</div>
+        </paper-toolbar>
+        <paper-menu>
+            <paper-item>Item 1</paper-item>
+            <paper-item>Item 2</paper-item>
+            <paper-item>Item 3</paper-item>
+        </paper-menu>
+    </paper-header-panel>
+
+
+    <paper-header-panel main>
+        <paper-toolbar>
+        </paper-toolbar>
+        <paper-material style="background-color : white">
+            <paper-button id="main-button" raised>
+                <iron-icon icon="save"></iron-icon>
+                Tab button
+            </paper-button>
+            <style>
+                #main-button{
+                    margin:16px;
+                }
+            </style>
+            <google-youtube video-id="y-yugxn9_ec" height="350px" width="210px"></google-youtube>
+            <p>Some text here ...............</p>
+
+        </paper-material>
+
+
+    </paper-header-panel>
+
+</paper-drawer-panel>
+
+<!--<div class="vertical-section-container centered">
+      <h3>Martas polymer</h3>
+      <demo-snippet>
+        <template>
+          <polymer-test></polymer-test>
+        </template>
+      </demo-snippet>
+    </div>-->
+
+
+</body>
+
+</html>

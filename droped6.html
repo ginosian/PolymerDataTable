@@ -1,0 +1,32 @@
+<dom-module id="stretch-flag">
+
+	<style>
+		#flag{
+			padding: 25px;
+			display: block;
+		}
+		#title {
+			padding: 25px 15px 0px 15px;
+			display: block;
+		}
+		#container{
+			background: cadetblue;
+		}
+	</style>
+
+	<template>
+		<div id="container">
+			<img id="flag" src="/bower_components/country-flags/png250px/am.png">
+			<select id="country_id">
+				<option value="ae">Republic of Armenia</option>
+			</select>
+		</div>
+	</template>
+
+</dom-module>
+
+<script>
+	Polymer({
+		is: "stretch-flag"
+	});
+</script>

@@ -1,0 +1,54 @@
+<dom-module id="stretch-flag">
+
+	<style>
+		.title {
+			/*padding: 0.05% 0.05% 0.05% 0.05%;*/
+			display: block;
+		}
+
+		.container {
+			background: cadetblue;
+			width: 150px;
+			height: 150px;
+		}
+
+		.container img {
+			height: calc(100% - 30px);
+			width: 100%;
+		}
+
+		:host {
+			display: inline-block;
+		}
+	</style>
+
+	<template>
+		<paper-toolbar>
+			<div class="title">{{country_id}}</div>
+		</paper-toolbar>
+
+		<div class="container">
+			<img src="{{ country_flag }}"/>
+			<div>{{ country_name }}</div>
+		</div>
+
+	</template>
+
+</dom-module>
+
+<script>
+	Polymer({
+		is: "stretch-flag",
+		properties: {
+			country_name: {
+				type: String
+			},
+			country_id: {
+				type: String
+			},
+			country_flag: {
+				type: String
+			}
+		}
+	});
+</script>
