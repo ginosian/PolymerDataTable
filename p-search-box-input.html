@@ -5,15 +5,16 @@
 
 		<template>
 
-			<paper-input label="search!" type="search" placeholder="search for cats" autosave="test" results="5">
+			<paper-input label="search!" type="search" placeholder="search for cats" autosave="test" results="5"
+			             style="background: #ffffff;">
 			<div suffix id="suffixDiv">
 				<paper-button-icon>
-					<iron-icon suffix icon="arrow-drop-up" ></iron-icon>
+					<iron-icon suffix icon="arrow-drop-up" style="color: #000000"></iron-icon>
 				</paper-button-icon>
 				<br>
 
 				<paper-button-icon>
-					<iron-icon suffix icon="arrow-drop-down"></iron-icon>
+					<iron-icon suffix icon="arrow-drop-down" style="color: #000000"></iron-icon>
 				</paper-button-icon>
 
 			</div>
@@ -28,12 +29,3 @@
 		is: "p-search-box-input"
 	});
 </script>
-
-
-
-<!--label="Find">&ndash;&gt;-->
-<!--<div prefix>$</div>-->
-<!--<div suffix>-->
-<!--<paper-icon-button>%</paper-icon-button>-->
-<!--</div>-->
-<!--</paper-input>-

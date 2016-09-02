@@ -1,0 +1,44 @@
+<dom-module id="p-header-panel">
+
+
+	<template style="align-content: center; align-items: center">
+
+		<link rel="import" href="/bower_components/paper-input/paper-input.html">
+		<link rel="import" href="/bower_components/paper-icon-button/paper-icon-button-light.html">
+		<link rel="import" href="/bower_components/iron-icon/iron-icon.html">
+		<link rel="import" href="/bower_components/paper-dropdown-menu/paper-dropdown-menu.html">
+		<link rel="import" href="/bower_components/paper-listbox/paper-listbox.html">
+		<link rel="import" href="/bower_components/paper-item/paper-item.html">
+		<link rel="import" href="/bower_components/iron-ajax/iron-ajax.html">
+		<link rel="import" href="/bower_components/iron-collapse/iron-collapse.html">
+		<link rel="import" href="/bower_components/paper-menu/paper-menu.html">
+		<link rel="import" href="/bower_components/paper-menu/paper-submenu.html">
+		<link rel="import" href="/p-search-box-input.html">
+		<link rel="import" href="/p-drop-down-menu.html">
+		<link rel="import" href="/drop-down-1-items.json">
+
+
+		<paper-header-panel >
+			<paper-toolbar style="height: 500px; align-content: center; align-items: center">
+				<link rel="import" href="/p-search-box-input.html">
+				<p-search-box-input style="padding: 50px; width: 250px">
+
+				</p-search-box-input>
+
+				<link rel="import" href="/p-drop-down-menu.html">
+				<p-drop-down-menu
+						json_url="/drop-down-1-items.json" title="Actions" style="padding: 20px; width: 250px">
+				</p-drop-down-menu>
+			</paper-toolbar>
+		</paper-header-panel>
+
+	</template>
+
+
+</dom-module>
+
+<script>
+	Polymer({
+		is: "p-header-panel",
+	});
+</script>

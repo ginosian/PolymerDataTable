@@ -8,6 +8,8 @@
 <body class="vertical layout" style="background-color : #dddddd">
 
 <script src="/bower_components/webcomponentsjs/webcomponents.js"></script>
+
+
 <link rel="import" href="/bower_components/polymer/polymer.html">
 <link rel="import" href="/bower_components/paper-drawer-panel/paper-drawer-panel.html">
 <link rel="import" href="/bower_components/paper-header-panel/paper-header-panel.html">
@@ -22,24 +24,55 @@
 <link rel="import" href="/stretch-flag.html">
 <link rel="import" href="/bower_components/paper-input/paper-input.html">
 <link rel="import" href="/bower_components/paper-icon-button/paper-icon-button-light.html">
-<link rel="import" href="/bower_components/paper-input/paper-input.html">
-<link rel="import" href="/bower_components/paper-icon-button/paper-icon-button-light.html">
-<link rel="import" href="/bower_components/iron-icon/iron-icon.html">
-<link rel="import" href="/bower_components/paper-dropdown-menu/paper-dropdown-menu.html">
-<link rel="import" href="/bower_components/paper-listbox/paper-listbox.html">
-<link rel="import" href="/bower_components/paper-item/paper-item.html">
-<link rel="import" href="/bower_components/iron-ajax/iron-ajax.html">
-<link rel="import" href="/bower_components/iron-collapse/iron-collapse.html">
-<link rel="import" href="/bower_components/paper-menu/paper-menu.html">
-<link rel="import" href="/bower_components/paper-menu/paper-submenu.html">
-<link rel="import" href="/p-search-box-input.html">
-<link rel="import" href="/p-drop-down-menu.html">
-<link rel="import" href="/drop-down-1-items.json">
 
 
-<link rel="import" href="/p-header-panel.html">
-<p-header-panel style="height: 800px; background: #e8e341">My panel</p-header-panel>
 
+<paper-drawer-panel>
+
+	<paper-header-panel drawer>
+		<paper-toolbar>
+			<div>Polymer toolbar</div>
+			<!--<paper-input label="search">-->
+
+			<!--</paper-input>-->
+		</paper-toolbar>
+		<paper-menu>
+			<paper-item>Item 1</paper-item>
+			<paper-item>Item 2</paper-item>
+			<paper-item>Item 3</paper-item>
+
+			<!--<paper-input label="search">-->
+			<!--<div prefix>-->
+			<!--$-->
+			<!--</div>-->
+			<!--<div suffix>-->
+			<!--<paper-icon-button>%</paper-icon-button>-->
+			<!--</div>-->
+			<!--</paper-input>-->
+			<link rel="import" href="/p-search-box-input.html">
+			<p-search-box-input></p-search-box-input>
+			<link rel="import" href="/p-drop-down-menu.html">
+			<link rel="import" href="/drop-down-1-items.json">
+			<p-drop-down-menu
+					json_url="/drop-down-1-items.json" title="Actions" >
+			</p-drop-down-menu>
+		</paper-menu>
+	</paper-header-panel>
+
+
+	<paper-header-panel main>
+		<paper-toolbar>
+		</paper-toolbar>
+		<paper-material style="background-color : white">
+			<link rel="import" href="/stretch-flags.html">
+			<link rel="import" href="/stretch-flag.html">
+			<stretch-flags>
+
+			</stretch-flags>
+		</paper-material>
+	</paper-header-panel>
+
+</paper-drawer-panel>
 
 </body>
 
